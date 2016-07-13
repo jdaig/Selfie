@@ -1,0 +1,30 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+#regis{
+  float: left;
+  display: block;
+  border: 1px solid black;
+  width: 40%;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: #B5E0F3;
+}
+
+#log{
+  float: right;
+  display: block;
+  border: 1px solid black;
+  width: 40%;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: #B5E0F3;
+}
+

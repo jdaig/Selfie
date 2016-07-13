@@ -1,0 +1,18 @@
+<h1>Wellcome to Instagram!</h1>
+
+<%= session[:error_menssage]%>
+
+<form id="regis" method="post" action="/register">
+<font>Register!</font><br>
+<input type="text" name="name" placeholder="Name"><br>
+<input type="text" name="mail" placeholder="E-mail"><br>
+<input name="password" type="password" ><br>
+<input type="submit" value="Join us!">
+</form>
+
+<form id="log" method="post" action="/login">
+<font>Login!</font><br>
+<input type="text" name="mail" placeholder="E-mail"><br>
+<input name="password" type="password" ><br>
+<input type="submit" value="Login">
+</form>

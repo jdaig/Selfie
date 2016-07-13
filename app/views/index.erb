@@ -1,0 +1,25 @@
+<h1>Welcome to Selfie!</h1>
+
+<p><%= session[:email] %> </p>
+<p><%= session[:user_name] %> </p>
+
+<form id="logout" action="/logout" method="get">
+    <br><input type="submit" value="Logout"> <br>
+</form>
+
+<form method="post" enctype='multipart/form-data' action="/upload">
+<br>
+  <input type='file' name='photo'>
+  <br/>
+  <input type='submit' value='Upload!'>
+</form>
+
+<ul>
+  <% if @photos = User.find(session[:id]).photos %>
+    <% @photos.each do |photo| %>
+      <div> 
+        <img src="<%= photo.photo %>">
+      </div>
+    <% end %>
+  <% end %>
+</ul> 
